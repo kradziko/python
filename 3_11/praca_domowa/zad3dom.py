@@ -19,7 +19,7 @@ class Osoba:
             self.nr = numer
             self.email = mail
     def wyswietl(self):
-        return "%-10s%#-15s%#-15s%#-12s%#-12s%#-10s" % (self.imie, self.nazwisko, self.adres,self.kraj,self.nr,self.email)
+        return "%-12s%#-16s%#-25s%#-12s%#-12s%#-10s" % (self.imie, self.nazwisko, self.adres,self.kraj,self.nr,self.email)
     def edytuj(self,args):
         if(args[0]):
             self.imie = raw_input('EDYCJA : podaj imie ')
@@ -83,11 +83,8 @@ class Ksiazka():
             if(pomoc==4):
                 self.wyswietl_ksiazke()
 
-
-
-
-karolina = Osoba("Karolina","Radzikowska","Langiewicza","Polska","07365486","karola@gmail.com")
-kamil = Osoba("Kamil","Lipski","Langiewicza","Polska","0485763","kamil@kamil.com")
+karolina = Osoba("Karolina","Radzikowska","Pilsudskiego 35a/16","Polska","073654861","karola@gmail.com")
+kamil = Osoba("Kamil","Lipski","Langiewicza","Polska","048576334","kamil@kamil.com")
 jozef = Osoba("Jozef","Pilsudski","Sulejowek","Polska","","")
 jozef2 = Osoba("Jozef","Pilsudski","jowek","Polska","","")
 Leon = Osoba("Leon","Radzikowski","Bychawa","Polska","","leon@gmail.com")
