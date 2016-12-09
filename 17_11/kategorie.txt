@@ -1,4 +1,4 @@
-0. Zwierzeta
-1. Ksiazki
-2. Zabawy
+0. Zwierzęta
+1. Książki
 3. Muzyka
+4. Przysłowia

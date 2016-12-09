@@ -1,13 +1,17 @@
-0. Kon by sie usmial
-0. Gdyby kozka nie skakala
-1. Pan Tadeusz
-2. Berek
-1. Lew, czarownica i stara szafa
+0. kon by sie usmial
+0. gdyby kozka nie skakala
+1. pan tadeusz
+1. lew, czarownica i stara szafa
 3. nuty
-0. Pingwiny z Madagaskaru
-1. Czysty kod
-1. Metro
-1. Tajemniczy ogrod
-2. ciuciubabka
-3. kolendy
+0. pingwiny z madagaskaru
+1. czysty kod
+1. metro
+1. tajemniczy ogrod
+3. koledy
 3. jaka to melodia
+4. co za duzo to nie zdrowo
+4. gdzie diabel nie moze, tam babe posle
+4. dla chcacego nic trudnego
+4. gdy kota nie ma, myszy harcuja
+4. wymienial stryjek siekierke za kijek
+0. patrzec jak ciele na malowane wrota
