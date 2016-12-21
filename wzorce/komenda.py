@@ -5,11 +5,15 @@ class Konto:
     def __repr__(self):
         return "Nr konta: %d, stan konta: %0.2f" %(self.numer, self.stan)
 
+
+
 class Konta(object):
     def __new__(type):
         if not "_instancja" in type.__dict__:
             type._instancja = object.__new__(type)
         return type._instancja
+    def wykonaj_przelew(self,kz,kd,ile): ##tu sprawdzac i ustwaic stan
+        print "wykonuje przelew z: %d do: %d kwota: %0.2f" % (kz, kd, ile)
 
 class Transakcje:
     def __new__(type):
@@ -25,8 +29,10 @@ class Przelew:
         self.kontoZrodlowe = kontoZ
         self.kontoDocelowe = kontoD
         self.kwota = kwota
+        self.receiver = Konta()
     def wykonaj(self):
-        print "wykonuje przelew z: %d do: %d kwota: %0.2f" % (self.kontoZrodlowe,self.kontoDocelowe,self.kwota)
+        self.receiver.wykonaj_przelew(self.kontoZrodlowe,self.kontoDocelowe,self.kwota)
+
 
 def main():
     konta={}
