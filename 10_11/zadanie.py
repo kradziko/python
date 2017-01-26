@@ -96,18 +96,14 @@ class listy:
             s[i] = ""
             y = random.randint(1, 12)
             for j in range(0,y):
-                if isinstance(self.l[random.randint(0,len(self.l)-1)],str) :
-                    s[i] += self.l[random.randint(0,len(self.l)-1)]
+                a = self.l[random.randint(0,len(self.l)-1)]
+                if isinstance(a,str):
+                    s[i] += a
         for i in range(0, x):
             print s[i]
 
 
 
-listx = [1,4,5,7,2,7,3,8]
-listx = list(set(listx))
-a = {}
-a[1] = "ty"
-print a[1]
 
 a = listy()
 lista = a.utworz_liste()
@@ -116,11 +112,11 @@ a.losowe_wartosci()
 print lista
 #for x in range(0,len(lista)):
 #    print lista[x]
-#a.usun_duplikaty()
+a.usun_duplikaty()
 #a.duplikaty_na_X()
-#print lista
+print lista
 #
-a.zastap_wielokrotnosci_235_AEL()
+a.zastap_wielokrotnosci_235_AEL() # nie dziala gdy a.duplikaty_na_X()
 a.zastap_pierwsze_Z()
 print lista
 
