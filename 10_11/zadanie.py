@@ -79,7 +79,7 @@ class listy:
         return suma/float(len(self.l))
     def zastap_wielokrotnosci_235_AEL(self,x =2,y=3,z=5,*inne):
         for t in range(0, len(self.l)):
-            if not (self.l[t] % x):
+            if isinstance(self.l[t],int) and not (self.l[t] % x):
                 self.l[t] = "A"
             if isinstance(self.l[t],int) and not (self.l[t] % y):
                 self.l[t] = "E"
@@ -113,10 +113,10 @@ print lista
 #for x in range(0,len(lista)):
 #    print lista[x]
 a.usun_duplikaty()
-#a.duplikaty_na_X()
+a.duplikaty_na_X()
 print lista
 #
-a.zastap_wielokrotnosci_235_AEL() # nie dziala gdy a.duplikaty_na_X()
+a.zastap_wielokrotnosci_235_AEL()
 a.zastap_pierwsze_Z()
 print lista
 
