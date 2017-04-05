@@ -6,6 +6,9 @@
 0. pingwiny z madagaskaru
 1. czysty kod
 1. metro
+
+
+
 1. tajemniczy ogrod
 3. koledy
 3. jaka to melodia
@@ -15,3 +18,6 @@
 4. gdy kota nie ma, myszy harcuja
 4. wymienial stryjek siekierke za kijek
 0. patrzec jak ciele na malowane wrota
+0. wybierac sie jak sojka za morze
+9.
+0.
