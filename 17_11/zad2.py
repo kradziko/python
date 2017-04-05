@@ -9,7 +9,6 @@ podajac litere i majac punkty dodatnie mnozymy je przez ilosc wystapien tej lite
 '''
 import random
 
-
 class kategoria:
     id = 0
     kategorie = open("kategorie.txt", "ab")
@@ -62,4 +61,4 @@ class kolo_fortuny:
 #p.dodaj_haslo(0)
 k = kolo_fortuny()
 k.losuj_kategorie()
-k.losuj_kolejnosc()
+#k.losuj_kolejnosc()

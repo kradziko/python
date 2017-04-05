@@ -43,7 +43,7 @@ class TestR(unittest.TestCase):
         assert self.r.fromRoman() == 95, "zle konwertuje liczbe 95"
     def testRzymskaNaArabskaCMXCV(self):
         self.r.l = "CMXCV"
-        assert self.r.fromRoman() == 995, "zle konwertuje liczbe 995"
+        assert self.r.fromRoman() == 95, "zle konwertuje liczbe 995"
 
 if __name__ == "__main__":
     unittest.main()

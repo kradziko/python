@@ -36,6 +36,7 @@ f1.close()
 f1 = open("plik1.txt","r+b")
 
 #read - odczytuje z pliku napis
+print "!!!"
 print f1.read()
 
 #tell - podaje aktualna pozycje w pliku
@@ -59,6 +60,7 @@ f1.writelines(["\n3 linia","\n4 linia","\n5 linia"])
 
 #readlines - wczytuje z pliku sekwencje napisow
 f1.seek(0)
+print "!!!"
 print f1.readlines()
 
 #truncate - skraca plik na podanej pozycji

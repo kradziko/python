@@ -34,7 +34,7 @@ class Osoba:
         if(args[5]):
             self.email = raw_input('EDYCJA : podaj mail ')
 
-class Ksiazka():
+class Ksiazka:
     id = 0
     a = {}
     def dodaj_rekord(self,os=None):

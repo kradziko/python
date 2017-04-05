@@ -1,4 +1,2 @@
-Lena = 52
-Ala = 8
-Karolka = 17
-Kamil = 12
+Karolka = 30
+Kamil = 55

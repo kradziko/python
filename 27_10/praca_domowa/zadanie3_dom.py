@@ -24,6 +24,6 @@ class sito_Eratostenesa:
 
 
 
-sito = sito_Eratostenesa(30)
+sito = sito_Eratostenesa(130)
 
 

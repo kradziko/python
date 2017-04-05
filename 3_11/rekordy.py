@@ -3,7 +3,7 @@
 class Adres:
     pass
 
-adr1 = Adres()
+adr1 = Adres() # utworzenie rekordu
 adr1.ulica = 'stonogi'
 adr1.nr = 23
 adr1.kod = '64-092'

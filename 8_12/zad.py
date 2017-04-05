@@ -18,7 +18,7 @@ class EntryDemo(Frame):
         self.text1.bind("<Return>", self.showContents)
         self.text1.pack(side=TOP, padx=5)
 
-        self.label2 = Label(self.frame1, text="Wybierz na jaki sysstem chcesz zamienic").pack(side=TOP)
+        self.label2 = Label(self.frame1, text="Wybierz na jaki system chcesz zamienic \ni nacisnij ENTER").pack(side=TOP)
 
         self.var = IntVar()
         for text, value in [('Dwojkowy', 1), ('Osemkowy', 2)]:
@@ -26,26 +26,14 @@ class EntryDemo(Frame):
         self.label4 = Label(self.frame1, text="Wynik: ").pack(side=TOP)
         self.liczba = StringVar("")
         self.label3 = Label(self.frame1, textvariable=self.liczba).pack(side=BOTTOM)
-        #Button(self.master, text="Zamien", command=self.zamien(var.get(),self.text1.get())).pack(side=TOP)
 
     def showContents(self, event):
-        '''wyswietl zawartosc pola
-        wyswietla nazwe pola tekstowego generujacego zdarzenie'''
-        theName = event.widget.winfo_name()
-        # podstaw zawartosc tego pola do zmiennej theContents
         var = self.var.get()
-        l2 = int(event.widget.get())
+        l2 = int(self.text1.get()) #event.widget.get()
         if var == 1:
             self.liczba.set(bin(l2))
         else:
             self.liczba.set(oct(l2))
-
-        '''po wypelnieniu pola tekstowego i wcisnieciu enter
-        zawartosc pola znajduje sie w theContents
-        a tu dla celow szkoleniowych drukujemy je w osobnym oknie  modulu MessageBox'''
-        #showinfo("Komunikat", theName + ": " + bin(l2))
-       # return theContents
-
 
 def main():
     EntryDemo().mainloop()
